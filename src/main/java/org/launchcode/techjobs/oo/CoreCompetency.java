@@ -53,4 +53,8 @@ public class CoreCompetency {
     public int getId() {
         return id;
     }
+
+    public void setID(int id){
+        this.id = id;
+    }
 }
