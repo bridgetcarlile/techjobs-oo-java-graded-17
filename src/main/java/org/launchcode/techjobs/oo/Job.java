@@ -92,4 +92,11 @@ public class Job {
     public int getId() {
         return id;
     }
+
+
+
+    //Make toString method
+    public String toString(Object Job) {
+        return System.lineSeparator();
+    }
 }
