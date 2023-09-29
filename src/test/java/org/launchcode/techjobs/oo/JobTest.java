@@ -39,10 +39,16 @@ public class JobTest {
     }
 
 
-//    @Test
-//    public void  testToStringStartsAndEndsWithNewLine() {
-//        Job test_job_six = new Job();
-//        assertEquals(System.lineSeparator(), test_job_six.toString());
-//    }
-//
+    @Test
+    public void  testToStringStartsAndEndsWithNewLine() {
+        Job test_job_six = new Job();
+        assertEquals(System.lineSeparator(), test_job_six.toString(test_job_six));
+    }
+
+    @Test
+    public void testToStringContainsCorrectLabelsAndData() {
+        Job test_job_seven = new Job("Front-end Developer", new Employer("Google"), new Location("Miami"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        assertEquals(System.lineSeparator() + "ID:" + test_job_seven.getId() + "Name:" + test_job_seven.getName() + "Employer:" + test_job_seven.getEmployer() + "Location:" + test_job_seven.getLocation() + "Position Type:" + test_job_seven.getPositionType() + "Core Competency:" + test_job_seven.getCoreCompetency() + System.lineSeparator(), test_job_seven.toString(test_job_seven));
+    }
+
 }

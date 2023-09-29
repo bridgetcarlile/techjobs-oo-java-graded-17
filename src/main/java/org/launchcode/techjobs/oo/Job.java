@@ -97,6 +97,6 @@ public class Job {
 
     //Make toString method
     public String toString(Object Job) {
-        return System.lineSeparator();
+        return System.lineSeparator() + "ID:" + this.id + "Name:" + this.name + "Employer:" + this.employer + "Location:" + this.location + "Position Type:" + this.positionType + "Core Competency:" + this.coreCompetency + System.lineSeparator();
     }
 }
