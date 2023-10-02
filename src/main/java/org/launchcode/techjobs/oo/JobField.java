@@ -1,5 +1,7 @@
 package org.launchcode.techjobs.oo;
 
+import java.util.Objects;
+
 public class JobField {
     private int id;
     private static int nextId = 1;
@@ -31,4 +33,6 @@ public class JobField {
     public void setValue(String value) {
         this.value = value;
     }
+
+
 }

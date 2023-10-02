@@ -34,15 +34,26 @@ public class Job {
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
+//    @Override
+//    public int hashCode() {
+//        return super.hashCode();
+//    }
     @Override
     public int hashCode() {
-        return super.hashCode();
+    return Objects.hash(getId());
+}
+//    @Override
+//    public boolean equals(Object obj) {
+//        return super.equals(obj);
+//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Job)) return false;
+        Job that = (Job) o;
+        return getId() == that.getId();
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
 
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
