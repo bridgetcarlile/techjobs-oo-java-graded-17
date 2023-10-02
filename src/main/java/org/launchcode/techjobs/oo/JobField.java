@@ -1,16 +1,16 @@
 package org.launchcode.techjobs.oo;
 
-public class JobFields {
+public class JobField {
     private int id;
     private static int nextId = 1;
     private String value;
 
-    public JobFields() {
+    public JobField() {
         id = nextId;
         nextId++;
     }
 
-    public JobFields(String value) {
+    public JobField(String value) {
         this();
         this.value = value;
     }
